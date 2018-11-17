@@ -12,9 +12,9 @@ public class RoomManager : SerializedMonoBehaviour
 
     public RoomVisualization prefab;
     
-    
     private static RoomManager Instance { get; set; }
     public static Transform Container => Instance?.transform;
+    
     
     public static void Add(Room r)
     {
@@ -30,8 +30,8 @@ public class RoomManager : SerializedMonoBehaviour
     private static void CreateVisuals(Room r)
     {
         var i = Instantiate(Instance.prefab, r.transform.position, r.transform.rotation, Container);
+        i.Initialize(r);
         visualizations.Add(i);
-        i.room = r;
     }
     
     private void Awake()
