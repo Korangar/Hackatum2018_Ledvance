@@ -317,39 +317,8 @@ __pycache__/
 .idea/
 Assets/Managed*
 Assets/Plugins/Editor/JetBrains/
-Assets/Project/Extensions/AVProLiveCamera/Demos/
-Assets/Project/Extensions/AVProLiveCamera/Demos.meta
-Assets/Project/Extensions/Canvas Flow/Examples.meta
-Assets/Project/Extensions/Canvas Flow/Documentation.meta
-Assets/Project/Extensions/Canvas Flow/Documentation/
-Assets/Project/Extensions/Canvas Flow/Examples/
-Assets/Project/Extensions/Paroxe/PDFRenderer/Plugins/
-Assets/Project/Extensions/Sirenix/Demos
-Assets/Project/Extensions/Sirenix/Demos.meta
-Assets/Project/Extensions/UI - BUILDER.meta
-Assets/Project/Extensions/UI - BUILDER/
-Assets/Project/Extensions/ZFBrowser/Demo/
-Assets/Project/Extensions/ZFBrowser/Demo.meta
-Assets/Project/Scripts/three10/obj.meta
-Assets/StreamingAssets/AssetBundles/
-Assets/StreamingAssets/AVProVideoSamples.meta
-Assets/StreamingAssets/AVProVideoSamples/
-Assets/StreamingAssets/config/forest/presets_ISE/
-Assets/StreamingAssets/threePort/media/
-Assets/StreamingAssets/threePort/three10_presentation_media.meta
-Assets/StreamingAssets/threePort/three10_presentation_media/
-Assets/StreamingAssets/Video/4_three10.pdf
-Assets/StreamingAssets/Video/4_three10.pdf.meta
-Assets/StreamingAssets/Video_ISE/
-Assets/UI - BUILDER.meta
-Assets/UI - BUILDER/
 build_android/
 build_iOS/
 build_linux/
-obfuscationReverseMapping.txt
 Thumbs.db
 Thumbs.db.meta
-
-# Submodule meta files
-Assets/Project/Extensions/jp.keijiro.osc-jack.meta
-Assets/Project/Scripts/three10/AssetBundles/AssetBundleExport.meta
