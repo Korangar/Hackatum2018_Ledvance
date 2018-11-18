@@ -7,16 +7,16 @@ using UnityEngine.Events;
 public class Scenario : MonoBehaviour
 {
 
-    public Event[] steps;
+    public Act[] acts;
 
     public enum EventType
     {
-        Wait, Invoke    
+        Wait, Invoke, KeyStroke
     }
 
     public IEnumerator Playback()
     {
-        foreach (var e in steps)
+        foreach (var e in acts)
         {
             yield return e.Invoke();
         }
@@ -28,7 +28,7 @@ public class Scenario : MonoBehaviour
     }
 
     [Serializable]
-    public class Event
+    public class Act
     {
         public EventType type;
 
@@ -38,6 +38,9 @@ public class Scenario : MonoBehaviour
         [ShowIf("type", EventType.Invoke)]
         public UnityEvent onInvoke;
 
+        [ShowIf("type", EventType.KeyStroke)]
+        public KeyCode key;
+        
         public IEnumerator Invoke()
         {
             switch (type)
@@ -50,6 +53,11 @@ public class Scenario : MonoBehaviour
                 case EventType.Invoke:
                 {
                     onInvoke.Invoke();
+                    break;
+                }
+                case EventType.KeyStroke:
+                {
+                    yield return new WaitUntil(()=> Input.GetKey(key));
                     break;
                 }
             }

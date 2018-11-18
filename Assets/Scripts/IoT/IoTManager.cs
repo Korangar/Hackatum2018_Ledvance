@@ -19,26 +19,41 @@ public class IoTManager : SerializedMonoBehaviour
     public static Transform Container => Instance?.transform;
     
     
-    public static void Add(IoTSensor sensor)
+    public static void Add(IoTPlayerBase player)
     {
-        if(Container)sensor.transform.SetParent(Container);
-        sensors.Add(sensor);
+        
+        var sensor = player as IoTSensor;
+        if (sensor != null)
+        {
+            if(Container)sensor.transform.SetParent(Container);
+            sensors.Add(sensor);
+            return;
+        }
+        
+        var consumer = player as IoTConsumer;
+        if (consumer != null)
+        {
+            if(Container)consumer.transform.SetParent(Container);
+            consumers.Add(consumer);
+            return;
+        }
     }
 
-    public static void Add(IoTConsumer consumer)
+    public static void Remove(IoTPlayerBase player)
     {
-        if(Container)consumer.transform.SetParent(Container);
-        consumers.Add(consumer);
-    }
-
-    public static void Remove(IoTSensor sensor)
-    {
-        sensors.Remove(sensor);
-    }
-
-    public static void Remove(IoTConsumer consumer)
-    {
-        consumers.Remove(consumer);
+        var sensor = player as IoTSensor;
+        if (sensor != null)
+        {
+            sensors.Remove(sensor);
+            return;
+        }
+        
+        var consumer = player as IoTConsumer;
+        if (consumer != null)
+        {
+            consumers.Remove(consumer);
+            return;
+        }
     }
 
     public static void Broadcast(IoTEvent e)
