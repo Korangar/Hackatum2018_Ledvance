@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acts:
   - type: 0
-    waittime: 2
+    waittime: 5
     onInvoke:
       m_PersistentCalls:
         m_Calls: []
@@ -188,7 +188,7 @@ MonoBehaviour:
     agent: {fileID: 1575229107}
     target: {fileID: 1306900518}
   - type: 0
-    waittime: 3
+    waittime: 5
     onInvoke:
       m_PersistentCalls:
         m_Calls: []
@@ -218,14 +218,14 @@ MonoBehaviour:
     key: 0
     agent: {fileID: 1575229107}
     target: {fileID: 1564714865}
-  - type: 0
+  - type: 2
     waittime: 5
     onInvoke:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-    key: 0
+    key: 32
     agent: {fileID: 0}
     target: {fileID: 0}
   - type: 1
@@ -250,7 +250,7 @@ MonoBehaviour:
     agent: {fileID: 0}
     target: {fileID: 0}
   - type: 0
-    waittime: 5
+    waittime: 3
     onInvoke:
       m_PersistentCalls:
         m_Calls: []
