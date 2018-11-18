@@ -6,5 +6,13 @@ using UnityEngine;
 public abstract class IoTConsumer : IoTPlayerBase
 {
     public abstract bool IsEventMatch(IoTEvent e);
+    
+    public void DoConsume(IoTEvent e)
+    {
+        var a = GetComponentInChildren<Animator>();
+        a.SetTrigger("trigger");
+        Consume(e);
+    }
     public abstract void Consume(IoTEvent e);
+    
 }

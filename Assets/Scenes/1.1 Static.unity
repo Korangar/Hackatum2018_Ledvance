@@ -112,6 +112,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: db22c581ccfa27c41b4f69f49f5516f2, type: 2}
+--- !u!1 &105843276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 105843276, guid: 12eae54b0d9246d409aae349c0583b5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1848711113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &105843277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105843276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738aa5adc50da114e8d8fc27e28cd78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 5305086198148318465, guid: 5fe0a3c24081e8d4cb49c54d568f7847, type: 3}
 --- !u!43 &132182940
 Mesh:
   m_ObjectHideFlags: 0
@@ -4471,6 +4491,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5725604491134794799, guid: 12eae54b0d9246d409aae349c0583b5e,
+        type: 3}
+      propertyPath: objects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778433920311086457, guid: 12eae54b0d9246d409aae349c0583b5e,
+        type: 3}
+      propertyPath: objects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4406451281353276869, guid: 12eae54b0d9246d409aae349c0583b5e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4807,8 +4837,27 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1285483656}
+    - target: {fileID: 5725604491134794799, guid: 12eae54b0d9246d409aae349c0583b5e,
+        type: 3}
+      propertyPath: objects.Array.data[0]
+      value: 
+      objectReference: {fileID: 9216561394273408730, guid: 52c0453243466bd43bc6307dd7188baa,
+        type: 3}
+    - target: {fileID: 4778433920311086457, guid: 12eae54b0d9246d409aae349c0583b5e,
+        type: 3}
+      propertyPath: objects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1172109584153233734, guid: 4fd44eadf082c4149b383c6e4c3f7d4d,
+        type: 3}
+    - target: {fileID: 4778433920311086457, guid: 12eae54b0d9246d409aae349c0583b5e,
+        type: 3}
+      propertyPath: objects.Array.data[1]
+      value: 
+      objectReference: {fileID: 2162845576900489732, guid: fb213e01a3640bd4f93763c89d38583d,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 1836597009, guid: 12eae54b0d9246d409aae349c0583b5e, type: 3}
+    - {fileID: 7207996375695739151, guid: 12eae54b0d9246d409aae349c0583b5e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 12eae54b0d9246d409aae349c0583b5e, type: 3}
 --- !u!43 &1886069276
 Mesh:

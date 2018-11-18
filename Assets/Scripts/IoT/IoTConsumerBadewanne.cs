@@ -6,7 +6,7 @@ public class IoTConsumerBadewanne : IoTConsumer
 {
     public override bool IsEventMatch(IoTEvent e)
     {
-        throw new System.NotImplementedException();
+        return false;
     }
 
     public override void Consume(IoTEvent e)

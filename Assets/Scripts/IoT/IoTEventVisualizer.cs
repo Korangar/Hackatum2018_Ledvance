@@ -27,7 +27,7 @@ public class IoTEventVisualizer : SerializedMonoBehaviour
     public void Resolve() 
     {
         enabled = false;
-        consumer.Consume(e);
+        consumer.DoConsume(e);
         var time = GetComponent<TrailRenderer>().time;
         Destroy(gameObject, time);
     } 

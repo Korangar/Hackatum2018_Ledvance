@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class IoTConsumerTVLivingRoom : IoTConsumer
-{
+{   
     public override bool IsEventMatch(IoTEvent e)
     {
-        throw new System.NotImplementedException();
+        if (e.from is IoTSensorBabyfon) return true;
+        return false;
     }
 
     public override void Consume(IoTEvent e)
-    {
-        throw new System.NotImplementedException();
+    {   
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 
 public class Scenario : MonoBehaviour
@@ -11,7 +12,7 @@ public class Scenario : MonoBehaviour
 
     public enum EventType
     {
-        Wait, Invoke, KeyStroke
+        Wait, Invoke, KeyStroke, MoveAgent
     }
 
     public IEnumerator Playback()
@@ -41,6 +42,12 @@ public class Scenario : MonoBehaviour
         [ShowIf("type", EventType.KeyStroke)]
         public KeyCode key;
         
+        [ShowIf("type", EventType.MoveAgent)]
+        public NavMeshAgent agent;
+        [ShowIf("type", EventType.MoveAgent)]
+        public Transform target;
+        
+        
         public IEnumerator Invoke()
         {
             switch (type)
@@ -58,6 +65,11 @@ public class Scenario : MonoBehaviour
                 case EventType.KeyStroke:
                 {
                     yield return new WaitUntil(()=> Input.GetKey(key));
+                    break;
+                }
+                case EventType.MoveAgent:
+                {
+                    agent.SetDestination(target.position);
                     break;
                 }
             }

@@ -6,7 +6,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3460207674905241015}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6972756212359684623
+--- !u!114 &1172109584153233734
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15,9 +15,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 7971137712724406745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26d2cbd94d83a0945b6a71e55cacf955, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b8fcae86154c74448c92bcd17437881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!1001 &3460207674905241015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,7 +92,7 @@ PrefabInstance:
     - target: {fileID: 6816773116332004462, guid: 0123ddb15687dc14d9d9fdf44782e083,
         type: 3}
       propertyPath: m_Name
-      value: IoTConsumer
+      value: IoTConsumer Variant TVWohnzimmer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0123ddb15687dc14d9d9fdf44782e083, type: 3}
