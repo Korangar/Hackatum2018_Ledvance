@@ -22,5 +22,24 @@ public class RoomVisualization : SerializedMonoBehaviour
         
         var emission = particles.emission;
         emission.rateOverTime = 2.5f * Area;
+
+        SetTemperature();
+    }
+
+    private void SetTemperature()
+    {
+        var main = particles.main;
+        float normedTemp = 1.0f * room.temperature / 30f;
+        if (normedTemp < 0.5)
+            main.startColor = new Color(normedTemp * 2, normedTemp * 2, 1 - normedTemp * 2);
+        else
+        {
+            main.startColor = new Color(1, 1 - (normedTemp - 0.5f) * 2, 0);
+        }
+    }
+
+    private void Update()
+    {
+        SetTemperature();
     }
 }
