@@ -694,6 +694,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 13.87
       objectReference: {fileID: 0}
+    - target: {fileID: 6358124456026188765, guid: 1af95ccf336e47f439fae510f4aff18a,
+        type: 3}
+      propertyPath: temperature
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af95ccf336e47f439fae510f4aff18a, type: 3}
 --- !u!43 &394465198
@@ -937,6 +942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358124456026188765, guid: 1af95ccf336e47f439fae510f4aff18a,
+        type: 3}
+      propertyPath: temperature
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af95ccf336e47f439fae510f4aff18a, type: 3}
@@ -2546,6 +2556,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6358124456026188765, guid: 1af95ccf336e47f439fae510f4aff18a,
+        type: 3}
+      propertyPath: temperature
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af95ccf336e47f439fae510f4aff18a, type: 3}
 --- !u!43 &1285483656
@@ -2789,6 +2804,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358124456026188765, guid: 1af95ccf336e47f439fae510f4aff18a,
+        type: 3}
+      propertyPath: temperature
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af95ccf336e47f439fae510f4aff18a, type: 3}
@@ -3514,6 +3534,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6358124456026188765, guid: 1af95ccf336e47f439fae510f4aff18a,
+        type: 3}
+      propertyPath: temperature
+      value: 27
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af95ccf336e47f439fae510f4aff18a, type: 3}
 --- !u!43 &1530920107
@@ -3757,6 +3782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358124456026188765, guid: 1af95ccf336e47f439fae510f4aff18a,
+        type: 3}
+      propertyPath: temperature
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af95ccf336e47f439fae510f4aff18a, type: 3}
