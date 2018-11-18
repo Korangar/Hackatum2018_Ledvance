@@ -23,6 +23,7 @@ public abstract class IoTPlayerBase : SerializedMonoBehaviour
             sourceTransform = t,
             weight = 1
         };
-        constraint.SetSource(0, s);
+        constraint.AddSource(s);
+        constraint.constraintActive = true;
     }
 }
