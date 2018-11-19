@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1.1 Static.unity
     guid: 29a3fccd9cd3d1447943589a9603f492
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/1.2.1 Scenario NoWorries.unity
     guid: 07afacd28f4c6034982ddd81a76aa634
   m_configObjects: {}

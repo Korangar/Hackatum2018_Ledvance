@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7709959939099376116}
   - component: {fileID: 7709959939099376114}
   - component: {fileID: 7709959939099376117}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RoomVisualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2596,7 +2596,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.01
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2753,16 +2753,16 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.01
+    frequency: 0.2
     damping: 1
-    octaves: 4
-    octaveMultiplier: 0.5
+    octaves: 1
+    octaveMultiplier: 1
     octaveScale: 2
     quality: 1
     scrollSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4701,7 +4701,7 @@ ParticleSystemRenderer:
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
-  m_MinParticleSize: 0
+  m_MinParticleSize: 0.0025
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
